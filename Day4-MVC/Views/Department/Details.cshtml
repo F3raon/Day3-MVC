@@ -1,0 +1,24 @@
+﻿@using MVC_DAY2.Models
+@model Department
+
+<br />
+
+<div class="d-flex justify-content-center">
+    <h2 class="text-success">Department Details</h2>
+</div>
+
+<br />
+<hr />
+<br />
+
+<div class="d-flex justify-content-center">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Department Name: @Model.DeptName</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Department Id: @Model.DeptId</h6>
+            <div class="d-flex justify-content-center mt-3">
+                <a href="~/Department/Index" class="btn btn-secondary">Back</a>
+            </div>
+        </div>
+    </div>
+</div>
