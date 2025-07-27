@@ -1,0 +1,27 @@
+﻿@using MVC_DAY2.Models
+@model Student
+
+<br />
+
+<div class="d-flex justify-content-center">
+    <h2 class="text-success">Department Details</h2>
+</div>
+
+<br />
+<hr />
+<br />
+
+<div class="d-flex justify-content-center">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Student Name: @Model.Name</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Student Id: @Model.Id</h6>
+            <h6 class="card-subtitle mb-2 text-muted">Student Age: @Model.Age</h6>
+            <h6 class="card-subtitle mb-2 text-muted">Student Address: @Model.Address</h6>
+            <h6 class="card-subtitle mb-2 text-muted">Department: @Model.Department.DeptName</h6>
+            <div class="d-flex justify-content-center mt-3">
+                <a href="~/Student/Index" class="btn btn-secondary">Back</a>
+            </div>
+        </div>
+    </div>
+</div>
